@@ -8,8 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint ./src --ext ts,tsx, json --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx,.json --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint ./src --ext .js,.jsx,.ts,.tsx,.json --fix",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "test": "cypress run"
   },
@@ -28,6 +28,7 @@
     "eslint": "^8.41.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-node": "^0.3.7",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -38,7 +39,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "vite": "^4.3.9"
   },
   "husky": {
